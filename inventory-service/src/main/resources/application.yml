@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: InventoryService
+
+server:
+  port: 8083

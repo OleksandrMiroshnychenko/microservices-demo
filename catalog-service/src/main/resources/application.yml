@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: CatalogService
+
+server:
+  port: 8082
+
+alex:
+  dot: "local-property"
