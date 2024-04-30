@@ -3,7 +3,7 @@ spring:
     name: RegistryService
 
 server:
-  port: 8078
+  port: 8761
 
 eureka:
   client:

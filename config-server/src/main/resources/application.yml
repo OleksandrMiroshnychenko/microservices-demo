@@ -11,9 +11,9 @@ spring:
           searchPaths: 'config-storage/{application}'
           default-label: master
           username: OleksandrMiroshnychenko
-          password: 07aleksandrMir
+          password: SET_ME
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8078/eureka/
+      defaultZone: http://localhost:8761/eureka/
