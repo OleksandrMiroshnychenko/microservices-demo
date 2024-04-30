@@ -2,5 +2,10 @@ spring:
   application:
     name: ProductService
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8078/eureka/
+
 alex:
   dot: "local-property"
