@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/your-repository/config-repo
-          searchPaths: '{application}'
+          uri: https://github.com/OleksandrMiroshnychenko/microservices-demo
+          searchPaths: 'config-storage/{application}'
           username: OleksandrMiroshnychenko
-          password:
+          password: 07aleksandrMir

@@ -7,6 +7,7 @@ import com.miroshnychenko.inventory.dto.AvailabilityStatus
 import com.miroshnychenko.inventory.dto.ProductAvailability
 import io.swagger.v3.oas.models.OpenAPI
 import io.swagger.v3.oas.models.info.Info
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.web.bind.annotation.RestController
@@ -19,8 +20,13 @@ import java.io.File
 @Configuration
 class Config {
 
+    @Value("\${alex.dot}")
+    private lateinit var property: String
+
     @Bean
     fun data(): Flux<ProductAvailability> {
+
+        println(property)
 
         val bootstrapSchema: CsvSchema = CsvSchema.builder().addColumn("uniqId").build().withHeader()
         val mapper = CsvMapper()
