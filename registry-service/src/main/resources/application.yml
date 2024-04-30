@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: RegistryService
+
+server:
+  port: 8078
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+alex:
+  dot: "local-property"
