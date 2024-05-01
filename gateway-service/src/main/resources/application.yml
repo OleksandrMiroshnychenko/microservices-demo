@@ -8,6 +8,14 @@ spring:
           uri: http://localhost:8082
           predicates:
             - Path=/catalog/**
+        - id: inventory-route
+          uri: http://localhost:8083
+          predicates:
+            - Path=/inventory/**
+        - id: products-route
+          uri: http://localhost:8080
+          predicates:
+            - Path=/products/**
 
 server:
   port: 8078

@@ -12,6 +12,6 @@ import reactor.core.publisher.Flux
 )
 interface InventoryClient {
 
-    @PostMapping("/products/availability")
+    @PostMapping("/inventory/availability")
     fun getProduct(@RequestBody uniqIds: MutableCollection<String?>): Flux<ProductAvailability>
 }

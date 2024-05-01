@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController
 import reactor.core.publisher.Flux
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/inventory")
 class InventoryController(private val inventoryService: InventoryService) {
 
     @PostMapping("/availability", produces = [MediaType.APPLICATION_NDJSON_VALUE])
