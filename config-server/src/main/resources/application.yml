@@ -10,8 +10,6 @@ spring:
           uri: https://github.com/OleksandrMiroshnychenko/microservices-demo
           searchPaths: 'config-storage/{application}'
           default-label: master
-          username: OleksandrMiroshnychenko
-          password: SET_ME
 
 eureka:
   client:

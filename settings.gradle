@@ -4,4 +4,6 @@ include 'inventory-service'
 include 'product-service'
 include 'config-server'
 include 'registry-service'
+include 'untitled'
+include 'gateway-service'
 

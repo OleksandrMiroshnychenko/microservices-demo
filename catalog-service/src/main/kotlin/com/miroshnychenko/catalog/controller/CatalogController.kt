@@ -8,7 +8,7 @@ import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/catalog")
 class CatalogController(private val catalogService: CatalogService) {
 
     @GetMapping("/{uniqId}", produces = [MediaType.APPLICATION_NDJSON_VALUE])
