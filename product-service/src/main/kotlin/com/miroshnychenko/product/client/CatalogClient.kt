@@ -9,7 +9,7 @@ import reactor.core.publisher.Mono
 
 
 @ReactiveFeignClient(
-    name = "catalog-service",
+    name = "catalogFeignClient",
     url = "http://localhost:8082/catalog"
 )
 interface CatalogClient {

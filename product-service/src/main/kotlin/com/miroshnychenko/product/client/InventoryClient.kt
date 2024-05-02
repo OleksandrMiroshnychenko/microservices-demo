@@ -7,11 +7,11 @@ import reactivefeign.spring.config.ReactiveFeignClient
 import reactor.core.publisher.Flux
 
 @ReactiveFeignClient(
-    name = "inventory-service",
+    name = "inventoryFeignClient",
     url = "http://localhost:8083"
 )
 interface InventoryClient {
 
     @PostMapping("/inventory/availability")
-    fun getProduct(@RequestBody uniqIds: MutableCollection<String?>): Flux<ProductAvailability>
+    fun getProductsAvailability(@RequestBody uniqIds: MutableCollection<String?>): Flux<ProductAvailability>
 }
